@@ -11,7 +11,7 @@ export default function TermsOfServicePage() {
             <p className="text-sm text-gray-600 mb-8">Last updated: December 2025</p>
             
             <p>
-              Welcome to Bite Battle. By accessing or using the Bite Battle game, website, and related services ("Service"), you agree to be bound by these Terms of Service ("Terms").
+              Welcome to Bite Battle. By accessing or using the Bite Battle game, website, and related services (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;).
             </p>
             <p>
               If you do not agree to these Terms, please do not use the Service.
@@ -89,7 +89,7 @@ export default function TermsOfServicePage() {
               To the maximum extent permitted by law:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Bite Battle is provided "as is" and "as available"</li>
+              <li>Bite Battle is provided &quot;as is&quot; and &quot;as available&quot;</li>
               <li>We are not liable for any indirect, incidental, or consequential damages arising from the use of the Service</li>
             </ul>
 

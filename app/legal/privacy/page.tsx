@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm text-gray-600 mb-8">Last updated: December 2025</p>
             
             <p>
-              Bite Battle ("we", "our", or "us") respects your privacy and is committed to protecting it. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Bite Battle game, website, and related services.
+              Bite Battle (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) respects your privacy and is committed to protecting it. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Bite Battle game, website, and related services.
             </p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">1. Information We Collect</h2>
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
               These actions can be performed in-app or by contacting us.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">7. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">7. Children&apos;s Privacy</h2>
             <p>
               Bite Battle is not intended for children under the age of 13.
               We do not knowingly collect personal information from children.

@@ -14,7 +14,7 @@ export default function ContactPage() {
               <div className="text-7xl mb-6">📧</div>
               <h2 className="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Have questions, feedback, or partnership inquiries? We'd love to hear from you!
+                Have questions, feedback, or partnership inquiries? We&apos;d love to hear from you!
               </p>
               <div className="soft-glass rounded-full px-8 py-4 inline-block">
                 <a 
