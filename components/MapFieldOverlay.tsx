@@ -7,6 +7,7 @@ interface MapFieldOverlayProps {
   left: string;
   width?: number;
   height?: number;
+  className?: string;
 }
 
 export default function MapFieldOverlay({
@@ -16,10 +17,11 @@ export default function MapFieldOverlay({
   left,
   width = 115,
   height = 115,
+  className = "",
 }: MapFieldOverlayProps) {
   return (
     <div 
-      className="absolute pointer-events-none"
+      className={`absolute pointer-events-none ${className}`}
       style={{ top, left }}
     >
       <Image

@@ -325,14 +325,14 @@ function CharacterCard({ character }: CharacterCardProps) {
 export default function CharacterPreview() {
   return (
     <section className="py-16 bg-gradient-to-b from-white to-orange-50">
-      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:max-w-[1536px] 2xl:mx-auto">
         <h2 className="section-heading-font text-4xl font-bold text-center mb-12">
           <span className="text-blue-600" style={{ textShadow: "-1px -1px 0 #1e40af, 1px -1px 0 #1e40af, -1px 1px 0 #1e40af, 1px 1px 0 #1e40af" }}>Characters</span>
         </h2>
         <div className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
           <div className="flex flex-nowrap gap-6">
             {characters.map((character, index) => (
-              <div key={index} className="flex-shrink-0" style={{ width: "calc((100% - 72px) / 4)" }}>
+              <div key={index} className="flex-shrink-0 min-w-[220px] sm:min-w-[240px] md:min-w-[260px] lg:min-w-[280px]">
                 <CharacterCard character={character} />
               </div>
             ))}

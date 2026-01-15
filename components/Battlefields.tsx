@@ -197,14 +197,14 @@ function BattlefieldCard({ battlefield }: BattlefieldCardProps) {
 export default function Battlefields() {
   return (
     <section className="py-16 bg-gradient-to-b from-orange-50 to-pink-50">
-      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:max-w-[1536px] 2xl:mx-auto">
         <h2 className="section-heading-font text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
           Battlefields
         </h2>
         <div className="w-full overflow-x-auto overflow-y-hidden scrollbar-hide" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
           <div className="flex flex-nowrap gap-6">
             {battlefields.map((battlefield, index) => (
-              <div key={index} className="flex-shrink-0" style={{ width: "calc((100% - 72px) / 4)" }}>
+              <div key={index} className="flex-shrink-0 min-w-[220px] sm:min-w-[240px] md:min-w-[260px] lg:min-w-[280px]">
                 <BattlefieldCard battlefield={battlefield} />
               </div>
             ))}

@@ -64,35 +64,41 @@ export default function HeroSection() {
       {/* UI Content Layer - z-50 */}
       <div className="relative z-50 w-full min-h-[85vh] flex flex-col items-center justify-center overflow-visible">
         {/* Map Field Overlays - Decorative game board images on world map */}
+        {/* Hidden on mobile to avoid overlap with core hero content */}
         <MapFieldOverlay
           imageSrc="/gameboard/biteburgersplash.png"
           alt="Bite Battle Game Board"
           top="35%"
           left="15%"
+          className="hidden md:block"
         />
         <MapFieldOverlay
           imageSrc="/gameboard/triangle_6x6x6.png"
           alt="Tasty Xeop Field"
           top="55%"
           left="20%"
+          className="hidden md:block"
         />
         <MapFieldOverlay
           imageSrc="/gameboard/gameboard_5x5.png"
           alt="5x5 Arena Field"
           top="40%"
           left="75%"
+          className="hidden md:block"
         />
         <MapFieldOverlay
           imageSrc="/gameboard/gameboard_6x6.png"
           alt="6x6 Arena Field"
           top="70%"
           left="80%"
+          className="hidden md:block"
         />
 
         {/* Social Media Ships - Decorative floating elements */}
+        {/* Hidden on mobile to keep the hero readable and uncluttered */}
         {/* YouTube Ship - Far Left, Lower Ocean (South Pacific) */}
         <div
-          className="hero-social-ship absolute z-10 pointer-events-none"
+          className="hero-social-ship absolute z-10 pointer-events-none hidden md:block"
           style={{
             bottom: "15%",
             left: "2.5%",
@@ -103,7 +109,7 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open Kitchen Alone on YouTube"
-            className="pointer-events-auto block"
+            className="pointer-events-auto block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/50 rounded-full"
           >
             <Image
               src="/social/YouTube.png"
@@ -117,7 +123,7 @@ export default function HeroSection() {
 
         {/* Facebook Ship - Far Left, Upper Ocean (North Pacific) */}
         <div
-          className="hero-social-ship hero-social-ship-delay-1 absolute z-10 pointer-events-none"
+          className="hero-social-ship hero-social-ship-delay-1 absolute z-10 pointer-events-none hidden md:block"
           style={{
             bottom: "50%",
             left: "2.5%",
@@ -135,7 +141,7 @@ export default function HeroSection() {
 
         {/* TikTok Ship - Right Ocean near Australia */}
         <div
-          className="hero-social-ship hero-social-ship-delay-2 absolute z-10 pointer-events-none"
+          className="hero-social-ship hero-social-ship-delay-2 absolute z-10 pointer-events-none hidden md:block"
           style={{
             bottom: "20%",
             left: "70%",
@@ -153,7 +159,7 @@ export default function HeroSection() {
 
         {/* Instagram Ship - Mid-Left, Mid Ocean (Central Pacific) */}
         <div
-          className="hero-social-ship hero-social-ship-delay-3 absolute z-10 pointer-events-none"
+          className="hero-social-ship hero-social-ship-delay-3 absolute z-10 pointer-events-none hidden md:block"
           style={{
             bottom: "33%",
             left: "9%",
@@ -169,57 +175,60 @@ export default function HeroSection() {
           />
         </div>
 
-        {/* Title Section */}
-        <div className="relative text-center mb-8 md:mb-12 -mt-16 md:-mt-20 overflow-visible">
-          <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-12 mb-4 md:mb-6 px-4 flex-wrap">
-            {/* Taco Fighter - Left */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/fighters/taco_fighter.png"
-                alt="Taco Fighter"
-                width={180}
-                height={180}
-                className="w-32 h-auto md:w-40 lg:w-44"
-                priority
-              />
-            </div>
-            
-            {/* BITE BATTLE Logo - Center */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/logo/bitebattletitle.png"
-                alt="Bite Battle Logo"
-                width={420}
-                height={320}
-                className="w-64 md:w-80 lg:w-[420px] h-auto"
-                priority
-              />
-            </div>
-            
-            {/* Burger Fighter - Right */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/fighters/burger_fighter.png"
-                alt="Burger Fighter"
-                width={180}
-                height={180}
-                className="w-32 h-auto md:w-40 lg:w-44"
-                priority
-              />
+        {/* Core hero content bounded on ultra-wide screens */}
+        <div className="w-full flex flex-col items-center 2xl:max-w-[1536px] 2xl:mx-auto">
+          {/* Title Section */}
+          <div className="relative text-center mb-8 md:mb-12 -mt-16 md:-mt-20 overflow-visible">
+            <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-12 mb-4 md:mb-6 px-4 flex-wrap">
+              {/* Taco Fighter - Left */}
+              <div className="flex-shrink-0">
+                <Image
+                  src="/fighters/taco_fighter.png"
+                  alt="Taco Fighter"
+                  width={180}
+                  height={180}
+                  className="w-32 h-auto md:w-40 lg:w-44"
+                  priority
+                />
+              </div>
+              
+              {/* BITE BATTLE Logo - Center */}
+              <div className="flex-shrink-0">
+                <Image
+                  src="/logo/bitebattletitle.png"
+                  alt="Bite Battle Logo"
+                  width={420}
+                  height={320}
+                  className="w-64 md:w-80 lg:w-[420px] h-auto"
+                  priority
+                />
+              </div>
+              
+              {/* Burger Fighter - Right */}
+              <div className="flex-shrink-0">
+                <Image
+                  src="/fighters/burger_fighter.png"
+                  alt="Burger Fighter"
+                  width={180}
+                  height={180}
+                  className="w-32 h-auto md:w-40 lg:w-44"
+                  priority
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Hero Subtitle - Single line below logo, above board */}
-        <div className="relative text-center mb-6 md:mb-8 px-4 md:px-6 lg:px-8 xl:px-12 z-[100]">
-          <span className="hero-subtitle-font text-lg md:text-xl lg:text-2xl font-semibold whitespace-nowrap">
-            Tic Tac Toe Battle with food characters!
-          </span>
-        </div>
+          {/* Hero Subtitle - Single line below logo, above board */}
+          <div className="relative text-center mb-6 md:mb-8 px-4 md:px-6 lg:px-8 xl:px-12 z-[100]">
+            <span className="hero-subtitle-font text-lg md:text-xl lg:text-2xl font-semibold md:whitespace-nowrap">
+              Tic Tac Toe Battle with food characters!
+            </span>
+          </div>
 
-        {/* Auto-Play Arena Section */}
-        <div className="relative flex items-center justify-center w-full px-4 mb-12 md:mb-16">
-          <AutoPlayArena width={arenaWidth} isMobile={isMobile} />
+          {/* Auto-Play Arena Section */}
+          <div className="relative flex items-center justify-center w-full px-4 mb-12 md:mb-16">
+            <AutoPlayArena width={arenaWidth} isMobile={isMobile} />
+          </div>
         </div>
       </div>
     </section>

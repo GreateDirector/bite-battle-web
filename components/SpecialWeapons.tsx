@@ -193,7 +193,7 @@ function WeaponCard({ weapon }: WeaponCardProps) {
 export default function SpecialWeapons() {
   return (
     <section className="py-16 bg-gradient-to-b from-orange-50 to-pink-50">
-      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:max-w-[1536px] 2xl:mx-auto">
         <h2 className="section-heading-font text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
           Special Weapons
         </h2>
