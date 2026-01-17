@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/map/worldmap_land.png')",
+          backgroundImage: "url('/map/worldmap_land.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -66,28 +66,28 @@ export default function HeroSection() {
         {/* Map Field Overlays - Decorative game board images on world map */}
         {/* Hidden on mobile to avoid overlap with core hero content */}
         <MapFieldOverlay
-          imageSrc="/gameboard/biteburgersplash.png"
+          imageSrc="/gameboard/biteburgersplash.webp"
           alt="Bite Battle Game Board"
           top="35%"
           left="15%"
           className="hidden md:block"
         />
         <MapFieldOverlay
-          imageSrc="/gameboard/triangle_6x6x6.png"
+          imageSrc="/gameboard/triangle_6x6x6.webp"
           alt="Tasty Xeop Field"
           top="55%"
           left="20%"
           className="hidden md:block"
         />
         <MapFieldOverlay
-          imageSrc="/gameboard/gameboard_5x5.png"
+          imageSrc="/gameboard/gameboard_5x5.webp"
           alt="5x5 Arena Field"
           top="40%"
           left="75%"
           className="hidden md:block"
         />
         <MapFieldOverlay
-          imageSrc="/gameboard/gameboard_6x6.png"
+          imageSrc="/gameboard/gameboard_6x6.webp"
           alt="6x6 Arena Field"
           top="70%"
           left="80%"
@@ -112,11 +112,12 @@ export default function HeroSection() {
             className="pointer-events-auto block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/50 rounded-full"
           >
             <Image
-              src="/social/YouTube.png"
+              src="/social/YouTube.webp"
               alt=""
               width={192}
               height={192}
               className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48"
+            loading="lazy"
             />
           </a>
         </div>
@@ -131,11 +132,12 @@ export default function HeroSection() {
           aria-hidden="true"
         >
           <Image
-            src="/social/facebook.png"
+            src="/social/facebook.webp"
             alt=""
             width={192}
             height={192}
             className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48"
+            loading="lazy"
           />
         </div>
 
@@ -149,11 +151,12 @@ export default function HeroSection() {
           aria-hidden="true"
         >
           <Image
-            src="/social/Tic_toc.png"
+            src="/social/Tic_toc.webp"
             alt=""
             width={192}
             height={192}
             className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48"
+            loading="lazy"
           />
         </div>
 
@@ -167,11 +170,12 @@ export default function HeroSection() {
           aria-hidden="true"
         >
           <Image
-            src="/social/instagram.png"
+            src="/social/instagram.webp"
             alt=""
             width={192}
             height={192}
             className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48"
+            loading="lazy"
           />
         </div>
 
@@ -183,7 +187,7 @@ export default function HeroSection() {
               {/* Taco Fighter - Left */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/fighters/taco_fighter.png"
+                  src="/fighters/taco_fighter.webp"
                   alt="Taco Fighter"
                   width={180}
                   height={180}
@@ -195,7 +199,7 @@ export default function HeroSection() {
               {/* BITE BATTLE Logo - Center */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/logo/bitebattletitle.png"
+                  src="/logo/bitebattletitle.webp"
                   alt="Bite Battle Logo"
                   width={420}
                   height={320}
@@ -207,7 +211,7 @@ export default function HeroSection() {
               {/* Burger Fighter - Right */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/fighters/burger_fighter.png"
+                  src="/fighters/burger_fighter.webp"
                   alt="Burger Fighter"
                   width={180}
                   height={180}

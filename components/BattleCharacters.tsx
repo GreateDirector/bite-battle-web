@@ -54,11 +54,12 @@ export default function BattleCharacters({ isMobile }: BattleCharactersProps) {
           }}
         >
           <Image
-            src="/assets/characters/burger.png"
+            src="/assets/characters/burger.webp"
             alt="Burger Bro"
             width={characterSize}
             height={characterSize}
             className="object-contain drop-shadow-2xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -81,11 +82,12 @@ export default function BattleCharacters({ isMobile }: BattleCharactersProps) {
           }}
         >
           <Image
-            src="/assets/characters/pizzapeperroni.png"
+            src="/assets/characters/pizzapeperroni.webp"
             alt="Pizza Pepperoni"
             width={characterSize}
             height={characterSize}
             className="object-contain drop-shadow-2xl"
+            loading="lazy"
           />
         </div>
       </div>

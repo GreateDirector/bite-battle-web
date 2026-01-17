@@ -30,6 +30,7 @@ export default function MapFieldOverlay({
         width={width}
         height={height}
         className="w-[115px] h-auto"
+        loading="lazy"
       />
     </div>
   );

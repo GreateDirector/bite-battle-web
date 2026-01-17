@@ -13,15 +13,15 @@ interface Weapon {
 const weapons: Weapon[] = [
   {
     name: "Extra Turn",
-    image: "/assets/weapons/weapon_extraturn.png",
+    image: "/assets/weapons/weapon_extraturn.webp",
   },
   {
     name: "Hammergeddon",
-    image: "/assets/weapons/weapon_hammergeddon.png",
+    image: "/assets/weapons/weapon_hammergeddon.webp",
   },
   {
     name: "Hammerquake",
-    image: "/assets/weapons/weapon_hammerquake.png",
+    image: "/assets/weapons/weapon_hammerquake.webp",
   },
 ];
 
@@ -177,6 +177,7 @@ function WeaponCard({ weapon }: WeaponCardProps) {
                 width={140}
                 height={140}
                 className="object-contain"
+                loading="lazy"
               />
             </div>
           </div>

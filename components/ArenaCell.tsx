@@ -62,13 +62,14 @@ export default function ArenaCell({ character, cellSize, isAnimating }: ArenaCel
           <Image
             src={
               character === "burger"
-                ? "/assets/characters/burger.png"
-                : "/assets/characters/pizzapeperroni.png"
+                ? "/assets/characters/burger.webp"
+                : "/assets/characters/pizzapeperroni.webp"
             }
             alt={character === "burger" ? "Burger Bro" : "Pizza Pepperoni"}
             width={imageSize}
             height={imageSize}
             className="object-contain"
+            loading="lazy"
           />
         </div>
       )}

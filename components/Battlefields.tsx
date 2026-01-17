@@ -12,23 +12,23 @@ interface Battlefield {
 const battlefields: Battlefield[] = [
   {
     name: "Classic Arena",
-    image: "/gameboard/biteburgersplash.png",
+    image: "/gameboard/biteburgersplash.webp",
   },
   {
     name: "4x4 Arena",
-    image: "/gameboard/game_board4x4.png",
+    image: "/gameboard/game_board4x4.webp",
   },
   {
     name: "Tasty Xeop",
-    image: "/gameboard/triangle_6x6x6.png",
+    image: "/gameboard/triangle_6x6x6.webp",
   },
   {
     name: "5x5 Arena",
-    image: "/gameboard/gameboard_5x5.png",
+    image: "/gameboard/gameboard_5x5.webp",
   },
   {
     name: "6x6 Arena",
-    image: "/gameboard/gameboard_6x6.png",
+    image: "/gameboard/gameboard_6x6.webp",
   },
 ];
 
@@ -184,6 +184,7 @@ function BattlefieldCard({ battlefield }: BattlefieldCardProps) {
                 width={140}
                 height={140}
                 className="object-contain"
+                loading="lazy"
               />
             </div>
           </div>

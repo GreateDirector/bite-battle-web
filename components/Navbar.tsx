@@ -13,11 +13,12 @@ export default function Navbar() {
         <div className="w-full flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo/bitebattletitle_line.png"
+              src="/logo/bitebattletitle_line.webp"
               alt="Bite Battle"
               width={280}
               height={160}
               className="h-20 w-auto mt-2 md:h-36 md:mt-8"
+              priority
             />
           </Link>
           {/* Mobile-only nav toggle to preserve desktop layout */}

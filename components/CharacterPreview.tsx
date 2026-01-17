@@ -14,52 +14,52 @@ const characters: Character[] = [
   {
     name: "Fry Fighter",
     tagline: "The crispy guardian",
-    image: "/assets/characters/fryfighter.png",
+    image: "/assets/characters/fryfighter.webp",
   },
   {
     name: "Burger Bro",
     tagline: "The juicy warrior",
-    image: "/assets/characters/burger.png",
+    image: "/assets/characters/burger.webp",
   },
   {
     name: "Burrito Bandit",
     tagline: "The spicy outlaw",
-    image: "/assets/characters/burrito.png",
+    image: "/assets/characters/burrito.webp",
   },
   {
     name: "Don Pizza",
     tagline: "The slice master",
-    image: "/assets/characters/pizzapeperroni.png",
+    image: "/assets/characters/pizzapeperroni.webp",
   },
   {
     name: "Nugget Ninja",
     tagline: "The golden defender",
-    image: "/assets/characters/chickennuggets.png",
+    image: "/assets/characters/chickennuggets.webp",
   },
   {
     name: "Onion Overlord",
     tagline: "The crispy circle",
-    image: "/assets/characters/onionrings.png",
+    image: "/assets/characters/onionrings.webp",
   },
   {
     name: "Sandwich",
     tagline: "The layered hero",
-    image: "/assets/characters/sandwich.png",
+    image: "/assets/characters/sandwich.webp",
   },
   {
     name: "Quesa Queen",
     tagline: "The folded fighter",
-    image: "/assets/characters/quesadilla.png",
+    image: "/assets/characters/quesadilla.webp",
   },
   {
     name: "Taco Slamo",
     tagline: "The shell warrior",
-    image: "/assets/characters/taco.png",
+    image: "/assets/characters/taco.webp",
   },
   {
     name: "Wrap Oliver",
     tagline: "The rolling striker",
-    image: "/assets/characters/wrapoliver.png",
+    image: "/assets/characters/wrapoliver.webp",
   },
 ];
 
@@ -218,6 +218,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                     width={180}
                     height={180}
                     className="object-contain"
+                    loading="lazy"
                   />
                 </div>
                 {/* Weapons stacked vertically */}
@@ -226,20 +227,22 @@ function CharacterCard({ character }: CharacterCardProps) {
                     <div className="flex flex-col gap-1">
                       <div className="relative w-[50px] h-[50px]">
                         <Image
-                          src="/assets/weapons/weapon_hammergeddon.png"
+                          src="/assets/weapons/weapon_hammergeddon.webp"
                           alt="Hammergeddon"
                           width={50}
                           height={50}
                           className="object-contain"
+                          loading="lazy"
                         />
                       </div>
                       <div className="relative w-[50px] h-[50px]">
                         <Image
-                          src="/assets/weapons/weapon_hammerquake.png"
+                          src="/assets/weapons/weapon_hammerquake.webp"
                           alt="Hammerquake"
                           width={50}
                           height={50}
                           className="object-contain"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -265,6 +268,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                     width={140}
                     height={140}
                     className="object-contain"
+                    loading="lazy"
                   />
                 </div>
                 {/* Weapons stacked vertically */}
@@ -273,20 +277,22 @@ function CharacterCard({ character }: CharacterCardProps) {
                     <div className="flex flex-col gap-1">
                       <div className="relative w-[50px] h-[50px]">
                         <Image
-                          src="/assets/weapons/weapon_extraturn.png"
+                          src="/assets/weapons/weapon_extraturn.webp"
                           alt="Extra Turn"
                           width={50}
                           height={50}
                           className="object-contain"
+                          loading="lazy"
                         />
                       </div>
                       <div className="relative w-[50px] h-[50px]">
                         <Image
-                          src="/assets/weapons/weapon_hammerquake.png"
+                          src="/assets/weapons/weapon_hammerquake.webp"
                           alt="Hammerquake"
                           width={50}
                           height={50}
                           className="object-contain"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -310,6 +316,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                   width={140}
                   height={140}
                   className="object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

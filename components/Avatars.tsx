@@ -12,23 +12,23 @@ interface Avatar {
 const avatars: Avatar[] = [
   {
     name: "Azteck",
-    image: "/assets/avatar/azteck_avatar.png",
+    image: "/assets/avatar/azteck_avatar.webp",
   },
   {
     name: "Dragon",
-    image: "/assets/avatar/dragon_avatar.png",
+    image: "/assets/avatar/dragon_avatar.webp",
   },
   {
     name: "General",
-    image: "/assets/avatar/frenchgeneral_avatar.png",
+    image: "/assets/avatar/frenchgeneral_avatar.webp",
   },
   {
     name: "Maharaja",
-    image: "/assets/avatar/maharajapremium_avatar.png",
+    image: "/assets/avatar/maharajapremium_avatar.webp",
   },
   {
     name: "Samurai",
-    image: "/assets/avatar/samurai_avatar.png",
+    image: "/assets/avatar/samurai_avatar.webp",
   },
 ];
 
@@ -184,6 +184,7 @@ function AvatarCard({ avatar }: AvatarCardProps) {
                 width={140}
                 height={140}
                 className="object-contain"
+                loading="lazy"
               />
             </div>
           </div>
