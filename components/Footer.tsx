@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Bite Battle. Internal Development Only.</p>
+          <p>© 2026 Bite Battle. All Rights Reserved. Bite Battle™ is a trademark of REBUSHAR LLC.</p>
         </div>
       </div>
     </footer>
