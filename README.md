@@ -113,7 +113,7 @@ Reusable card component with soft-glass effect. Used throughout the site for con
 3. **Rewards (`/rewards`)** - Real-world burger rewards explanation
 4. **Bite Friend (`/friend`)** - Partner program for restaurants/food trucks
 5. **Blog (`/blog`)** - Developer updates (empty placeholder)
-6. **Contact (`/contact`)** - Contact information (hello@bitebattle.net)
+6. **Contact (`/contact`)** - Contact information (support@bitebattle.net)
 7. **Legal (`/legal`)** - Privacy policy and terms of service placeholders
 
 ## Future Expansion
@@ -172,7 +172,7 @@ Reusable card component with soft-glass effect. Used throughout the site for con
 
 ## Contact
 
-For questions or issues, contact: **hello@bitebattle.net**
+For questions or issues, contact: **support@bitebattle.net**
 
 ---
 

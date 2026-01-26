@@ -109,7 +109,7 @@ export default function TermsOfServicePage() {
               If you have any questions about these Terms, contact us at:
             </p>
             <p>
-              📧 hello@bitebattle.net
+              📧 support@bitebattle.net
             </p>
           </div>
         </div>

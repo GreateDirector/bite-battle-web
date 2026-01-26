@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions or concerns about this Privacy Policy or your data, contact us at:
             </p>
             <p>
-              📧 hello@bitebattle.net
+              📧 support@bitebattle.net
             </p>
           </div>
         </div>

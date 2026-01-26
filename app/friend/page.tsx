@@ -51,7 +51,7 @@ export default function FriendPage() {
               Interested in becoming a Bite Friend partner? Contact us to learn more about partnership opportunities.
             </p>
             <p className="text-gray-600 text-sm">
-              Email: <a href="mailto:hello@bitebattle.net" className="text-pink-500 hover:underline">hello@bitebattle.net</a>
+              Email: <a href="mailto:support@bitebattle.net" className="text-pink-500 hover:underline">support@bitebattle.net</a>
             </p>
           </SoftGlassCard>
         </div>

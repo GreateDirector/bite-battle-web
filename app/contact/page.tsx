@@ -18,10 +18,10 @@ export default function ContactPage() {
               </p>
               <div className="soft-glass rounded-full px-8 py-4 inline-block">
                 <a 
-                  href="mailto:hello@bitebattle.net" 
+                  href="mailto:support@bitebattle.net" 
                   className="text-xl font-semibold text-gray-800 hover:text-orange-500 transition-colors"
                 >
-                  hello@bitebattle.net
+                  support@bitebattle.net
                 </a>
               </div>
             </div>
