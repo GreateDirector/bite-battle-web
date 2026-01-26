@@ -1,0 +1,12 @@
+# Bite Battle Web - robots.txt
+# https://bitebattle.net/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin/internal routes if any
+# Disallow: /admin
+# Disallow: /api
+
+# Sitemap location
+Sitemap: https://bitebattle.net/sitemap.xml

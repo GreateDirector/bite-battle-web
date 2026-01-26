@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "Developer Updates",
+  description: "Stay updated with the latest Bite Battle news, developer updates, game features, and community announcements.",
+  openGraph: {
+    title: "Developer Updates | Bite Battle",
+    description: "Stay updated with the latest Bite Battle news, developer updates, and game features.",
+    url: "/blog",
+  },
+};
 
 export default function BlogPage() {
   return (
@@ -11,7 +22,7 @@ export default function BlogPage() {
         <div className="w-full">
           <SoftGlassCard>
             <div className="text-center">
-              <div className="text-6xl mb-4">📝</div>
+              <div className="text-6xl mb-4" aria-hidden="true">📝</div>
               <h2 className="text-2xl font-bold mb-4 text-gray-800">Coming Soon</h2>
               <p className="text-gray-700">
                 Developer updates and blog posts will appear here in the future.

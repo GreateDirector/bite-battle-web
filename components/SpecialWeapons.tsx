@@ -14,14 +14,17 @@ const weapons: Weapon[] = [
   {
     name: "Extra Turn",
     image: "/assets/weapons/weapon_extraturn.webp",
+    description: "Make two moves!\nPlay again right away.",
   },
   {
     name: "Hammergeddon",
     image: "/assets/weapons/weapon_hammergeddon.webp",
+    description: "Break a cell forever\nThis spot is gone for the whole game.",
   },
   {
     name: "Hammerquake",
     image: "/assets/weapons/weapon_hammerquake.webp",
+    description: "Freeze a cell for a while\nNo one can use it for 4 turns.",
   },
 ];
 
@@ -183,7 +186,7 @@ function WeaponCard({ weapon }: WeaponCardProps) {
           </div>
           <h3 className="text-xl font-bold mb-2 text-red-500">{weapon.name}</h3>
           {weapon.description && (
-            <p className="text-gray-600 text-sm">{weapon.description}</p>
+            <p className="text-gray-600 text-sm whitespace-pre-line">{weapon.description}</p>
           )}
         </div>
       </SoftGlassCard>

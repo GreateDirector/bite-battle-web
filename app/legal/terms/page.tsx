@@ -1,3 +1,15 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Bite Battle Terms of Service. Review the terms and conditions that govern your use of Bite Battle game, website, and related services.",
+  openGraph: {
+    title: "Terms of Service | Bite Battle",
+    description: "Review the terms and conditions that govern your use of Bite Battle.",
+    url: "/legal/terms",
+  },
+};
+
 export default function TermsOfServicePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">

@@ -1,3 +1,15 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Bite Battle Privacy Policy. Learn how we collect, use, and protect your personal information when you use our game and services.",
+  openGraph: {
+    title: "Privacy Policy | Bite Battle",
+    description: "Learn how Bite Battle collects, uses, and protects your personal information.",
+    url: "/legal/privacy",
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">

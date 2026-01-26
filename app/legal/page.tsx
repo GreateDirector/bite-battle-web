@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "Legal Information",
+  description: "Review Bite Battle's Privacy Policy and Terms of Service. Learn how we protect your data and the terms that govern your use of our services.",
+  openGraph: {
+    title: "Legal Information | Bite Battle",
+    description: "Review Bite Battle's Privacy Policy and Terms of Service.",
+    url: "/legal",
+  },
+};
 
 export default function LegalPage() {
   return (
@@ -8,28 +20,30 @@ export default function LegalPage() {
           Legal Information
         </h1>
         
-        <div className="w-full space-y-8">
-          <SoftGlassCard>
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">Privacy Policy</h2>
-            <p className="text-gray-700 mb-4">
-              This is a placeholder for the Privacy Policy. The full privacy policy will be added here 
-              in a future update.
-            </p>
-            <p className="text-gray-600 text-sm">
-              Last updated: {new Date().toLocaleDateString()}
-            </p>
-          </SoftGlassCard>
+        <div className="w-full space-y-8 max-w-4xl mx-auto">
+          <Link href="/legal/privacy">
+            <SoftGlassCard className="cursor-pointer hover:scale-105 transition-transform">
+              <h2 className="text-3xl font-bold mb-4 text-gray-800">Privacy Policy</h2>
+              <p className="text-gray-700 mb-4">
+                Learn how we collect, use, and protect your personal information when you use Bite Battle.
+              </p>
+              <p className="text-gray-600 text-sm">
+                Last updated: December 2025
+              </p>
+            </SoftGlassCard>
+          </Link>
 
-          <SoftGlassCard>
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">Terms of Service</h2>
-            <p className="text-gray-700 mb-4">
-              This is a placeholder for the Terms of Service. The full terms of service will be added here 
-              in a future update.
-            </p>
-            <p className="text-gray-600 text-sm">
-              Last updated: {new Date().toLocaleDateString()}
-            </p>
-          </SoftGlassCard>
+          <Link href="/legal/terms">
+            <SoftGlassCard className="cursor-pointer hover:scale-105 transition-transform">
+              <h2 className="text-3xl font-bold mb-4 text-gray-800">Terms of Service</h2>
+              <p className="text-gray-700 mb-4">
+                Review the terms and conditions that govern your use of Bite Battle and related services.
+              </p>
+              <p className="text-gray-600 text-sm">
+                Last updated: December 2025
+              </p>
+            </SoftGlassCard>
+          </Link>
         </div>
       </div>
     </div>

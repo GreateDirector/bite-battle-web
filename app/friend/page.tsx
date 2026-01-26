@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "Bite Friend Partner Program",
+  description: "Join the Bite Friend network! Partner with Bite Battle to offer real-world rewards to players, drive foot traffic to your restaurant or food truck, and become part of the Bite Battle ecosystem.",
+  openGraph: {
+    title: "Bite Friend Partner Program | Bite Battle",
+    description: "Join the Bite Friend network! Partner with Bite Battle to offer rewards to players and drive foot traffic to your business.",
+    url: "/friend",
+  },
+};
 
 export default function FriendPage() {
   return (
@@ -11,7 +22,7 @@ export default function FriendPage() {
         <div className="w-full">
           <SoftGlassCard className="mb-8">
             <div className="text-center mb-6">
-              <div className="text-7xl mb-4">🤝</div>
+              <div className="text-7xl mb-4" aria-hidden="true">🤝</div>
               <h2 className="text-3xl font-bold mb-4 text-gray-800">Join the Bite Friend Network</h2>
             </div>
             <p className="text-gray-700 text-lg mb-4">

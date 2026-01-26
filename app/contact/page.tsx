@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with the Bite Battle team. Have questions, feedback, or partnership inquiries? We'd love to hear from you!",
+  openGraph: {
+    title: "Contact Us | Bite Battle",
+    description: "Get in touch with the Bite Battle team. Questions, feedback, or partnership inquiries welcome!",
+    url: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
@@ -11,7 +22,7 @@ export default function ContactPage() {
         <div className="w-full">
           <SoftGlassCard>
             <div className="text-center">
-              <div className="text-7xl mb-6">📧</div>
+              <div className="text-7xl mb-6" aria-hidden="true">📧</div>
               <h2 className="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
               <p className="text-gray-700 text-lg mb-6">
                 Have questions, feedback, or partnership inquiries? We&apos;d love to hear from you!

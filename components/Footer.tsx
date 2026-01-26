@@ -10,7 +10,7 @@ export default function Footer() {
               Bite Battle
             </h3>
             <p className="text-gray-600 text-sm">
-              Internal development website. Not for public deployment.
+              Strategic food fighter battle game. Win real-world rewards at partner restaurants.
             </p>
           </div>
           <div>

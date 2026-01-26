@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 import ArenaPreview from "@/components/ArenaPreview";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "How to Play",
+  description: "Learn how to play Bite Battle! Master the tic-tac-toe battle game, explore arenas, collect ingredients, and equip powerful weapons to become the ultimate food fighter.",
+  openGraph: {
+    title: "How to Play Bite Battle",
+    description: "Learn how to play Bite Battle! Master the tic-tac-toe battle game, explore arenas, and become the ultimate food fighter.",
+    url: "/game",
+  },
+};
 
 export default function GamePage() {
   return (

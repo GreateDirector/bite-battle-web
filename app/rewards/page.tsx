@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import SoftGlassCard from "@/components/SoftGlassCard";
+
+export const metadata: Metadata = {
+  title: "Real-World Burger Rewards",
+  description: "Win real burgers by playing Bite Battle! Earn points, unlock burger vouchers, and redeem rewards at partner restaurants. The more you play, the more delicious rewards you unlock.",
+  openGraph: {
+    title: "Real-World Burger Rewards | Bite Battle",
+    description: "Win real burgers by playing Bite Battle! Earn points and redeem rewards at partner restaurants.",
+    url: "/rewards",
+  },
+};
 
 export default function RewardsPage() {
   return (
@@ -11,7 +22,7 @@ export default function RewardsPage() {
         <div className="w-full">
           <SoftGlassCard className="mb-8">
             <div className="text-center mb-6">
-              <div className="text-7xl mb-4">🍔</div>
+              <div className="text-7xl mb-4" aria-hidden="true">🍔</div>
               <h2 className="text-3xl font-bold mb-4 text-gray-800">Win Real Burgers!</h2>
             </div>
             <p className="text-gray-700 text-lg mb-4">
