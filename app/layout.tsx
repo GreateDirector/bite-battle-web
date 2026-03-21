@@ -13,10 +13,11 @@ const coiny = Coiny({
 
 export const metadata: Metadata = {
   title: {
-    default: "Bite Battle - Food Fighter Battle Game",
+    default: "Bite Battle - Unique Tic Tac Toe Game | Win Real Burgers",
     template: "%s | Bite Battle",
   },
-  description: "Play Bite Battle, a strategic tic-tac-toe battle game featuring food characters. Win real-world burger rewards at partner restaurants!",
+  description:
+    "Play Bite Battle: a unique Tic Tac Toe with 10 characters and 8 arenas. Join the Bite Friend program to win real burgers! Officially available on the iOS App Store.",
   keywords: ["Bite Battle", "food game", "battle game", "tic-tac-toe", "mobile game", "food fighters"],
   authors: [{ name: "Bite Battle Team" }],
   creator: "REBUSHAR LLC",
@@ -27,8 +28,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Bite Battle",
-    title: "Bite Battle - Food Fighter Battle Game",
-    description: "Play Bite Battle, a strategic tic-tac-toe battle game featuring food characters. Win real-world burger rewards!",
+    title: "Bite Battle - Unique Tic Tac Toe Game | Win Real Burgers",
+    description:
+      "Play Bite Battle: a unique Tic Tac Toe with 10 characters and 8 arenas. Join the Bite Friend program to win real burgers! Officially available on the iOS App Store.",
     images: [
       {
         url: "/logo/bitebattletitle.webp",
@@ -40,8 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bite Battle - Food Fighter Battle Game",
-    description: "Play Bite Battle, a strategic tic-tac-toe battle game featuring food characters. Win real-world burger rewards!",
+    title: "Bite Battle - Unique Tic Tac Toe Game | Win Real Burgers",
+    description:
+      "Play Bite Battle: a unique Tic Tac Toe with 10 characters and 8 arenas. Join the Bite Friend program to win real burgers! Officially available on the iOS App Store.",
     images: ["/logo/bitebattletitle.webp"],
   },
   robots: {
