@@ -61,6 +61,9 @@ export const metadata: Metadata = {
   verification: {
     // Add Google Search Console verification when available
     // google: "verification_token_here",
+    other: {
+      "p:domain_verify": "ae68d08fd46ca641566159c512c79b20",
+    },
   },
 };
 
